@@ -40,7 +40,7 @@ class Project
     private $date_out;
 
     /**
-     * @ORM\ManyToMany(targetEntity=user::class, inversedBy="projects")
+     * @ORM\ManyToMany(targetEntity=User::class, inversedBy="projects")
      */
     private $user;
 

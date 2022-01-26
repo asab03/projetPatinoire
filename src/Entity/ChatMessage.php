@@ -18,13 +18,13 @@ class ChatMessage
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity=discussion::class, inversedBy="chatMessages")
+     * @ORM\ManyToOne(targetEntity=Discussion::class, inversedBy="chatMessages")
      * @ORM\JoinColumn(nullable=false)
      */
     private $discussion;
 
     /**
-     * @ORM\OneToOne(targetEntity=user::class, inversedBy="chatMessage", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity=User::class, inversedBy="chatMessage", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;

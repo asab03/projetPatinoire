@@ -33,12 +33,12 @@ class Expense
     private $date;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="expenses")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="expenses")
      */
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity=project::class, inversedBy="expenses")
+     * @ORM\ManyToOne(targetEntity=Project::class, inversedBy="expenses")
      */
     private $project;
 

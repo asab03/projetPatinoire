@@ -18,7 +18,7 @@ class Document
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity=project::class, inversedBy="documents")
+     * @ORM\ManyToOne(targetEntity=Project::class, inversedBy="documents")
      */
     private $project;
 

@@ -20,7 +20,7 @@ class Discussion
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity=project::class, inversedBy="discussion", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity=Project::class, inversedBy="discussion", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $project;
